@@ -1,0 +1,54 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local env / IDE files
+.env
+*.env
+.vscode/
+.idea/
+
+# Training code and scripts
+training/
+scripts/train*.sh
+scripts/debug*.sh
+scripts/rebuttal_train.sh
+scripts/run_exp1_inference.sh
+data/collator_old.py
+
+# Training-only configs
+configs/stage*_config.yaml
+configs/ds_config.json
+configs/temp_inference_*.yaml
+
+# Data, outputs, and experiment logs
+data_cache/
+datasets/
+raw_data/
+processed_data/
+outputs/
+runs/
+logs/
+wandb/
+tensorboard/
+*.log
+
+# Checkpoints and model weights are released on Hugging Face, not GitHub.
+checkpoints/
+sources/encoder_checkpoints/
+
+# Generic weight files are ignored by default.
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+

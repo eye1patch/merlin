@@ -1,0 +1,6 @@
+IQ_COL_NAME = "samples"
+TEXT_IQ_PLACEHOLDER = "<iq_data>"
+EM_TOKEN = "<EM>"
+IQ_START_TOKEN = "<IQ_START>"
+IQ_END_TOKEN = "<IQ_END>"
+IGNORE_INDEX = -100

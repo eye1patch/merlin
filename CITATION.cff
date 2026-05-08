@@ -1,0 +1,81 @@
+cff-version: 1.2.0
+message: "If you use MERLIN, please cite the associated paper."
+title: "MERLIN: Building Low-SNR Robust Multimodal LLMs for Electromagnetic Signals"
+type: article
+authors:
+  - family-names: Shen
+    given-names: Junyu
+  - family-names: She
+    given-names: Zhendong
+  - family-names: Zhang
+    given-names: Chenghanyu
+  - family-names: Sun
+    given-names: Yuchuang
+  - family-names: Luo
+    given-names: Luqing
+  - family-names: Tan
+    given-names: Dingwei
+  - family-names: Guo
+    given-names: Zonghao
+  - family-names: Guo
+    given-names: Bo
+  - family-names: Han
+    given-names: Zehua
+  - family-names: Xie
+    given-names: Wupeng
+  - family-names: Mu
+    given-names: Yaxin
+  - family-names: Zhang
+    given-names: Peng
+  - family-names: Li
+    given-names: Peipei
+  - family-names: Wang
+    given-names: Fengxiang
+  - family-names: Sun
+    given-names: Yangang
+  - family-names: Sun
+    given-names: Maosong
+year: 2026
+repository-code: "https://github.com/em-merlin/MERLIN"
+url: "https://arxiv.org/abs/2603.08174"
+abstract: "MERLIN is a multimodal large language model framework for electromagnetic signals, targeting robust signal perception and reasoning under low-SNR conditions."
+preferred-citation:
+  type: article
+  title: "MERLIN: Building Low-SNR Robust Multimodal LLMs for Electromagnetic Signals"
+  authors:
+    - family-names: Shen
+      given-names: Junyu
+    - family-names: She
+      given-names: Zhendong
+    - family-names: Zhang
+      given-names: Chenghanyu
+    - family-names: Sun
+      given-names: Yuchuang
+    - family-names: Luo
+      given-names: Luqing
+    - family-names: Tan
+      given-names: Dingwei
+    - family-names: Guo
+      given-names: Zonghao
+    - family-names: Guo
+      given-names: Bo
+    - family-names: Han
+      given-names: Zehua
+    - family-names: Xie
+      given-names: Wupeng
+    - family-names: Mu
+      given-names: Yaxin
+    - family-names: Zhang
+      given-names: Peng
+    - family-names: Li
+      given-names: Peipei
+    - family-names: Wang
+      given-names: Fengxiang
+    - family-names: Sun
+      given-names: Yangang
+    - family-names: Sun
+      given-names: Maosong
+  year: 2026
+  journal: "arXiv preprint arXiv:2603.08174"
+  url: "https://arxiv.org/abs/2603.08174"
+

@@ -1,0 +1,55 @@
+# 批量推理配置文件
+# 基于现有的inference.yaml配置，支持多个checkpoint的批量处理
+
+# 版本信息
+version: "default"
+
+# checkpoint目录配置
+checkpoint_base_dir: "/path/to/checkpoints"
+
+# 输出目录配置
+base_output_dir: "./outputs/batch_inference"
+
+# 推理配置（基于inference.yaml）
+inference_config:
+  # ===== EM encoder (SiT) 配置 =====
+  em_encoder:
+    model_name_or_path: "./sources/encoder_checkpoints/checkpoint-177560"
+    config_overrides: null
+    max_seq_len: [4096, 1]
+    patch_size: [8, 1]
+    use_fs: false
+    attention_type: "eager"
+
+  # 模型相关
+  model_name: "Qwen/Qwen3-4B-Instruct-2507"
+  em_hidden_size: 768
+  projector_dims: 1536
+  # checkpoint: 这个字段会动态设置
+  # output_dir: 这个字段会动态设置
+
+  # 数据集
+  dataset_path: "/path/to/EM-Bench"
+  max_seq_len: 2048
+  num_proc: 12
+
+  lora:
+    use_lora: False
+    r: 8
+    lora_alpha: 16
+    target_modules: ["q_proj", "k_proj"]
+    lora_dropout: 0.05
+    bias: "none"
+    task_type: "CAUSAL_LM"
+
+  # 推理设置
+  batch_size: 16
+  bf16: true
+  max_new_tokens: 1024
+  temperature: 0.7
+  top_p: 0.9
+  do_sample: true
+
+# 评估配置
+evaluation:
+  open_ended_metrics: ["rouge-l", "bleu"]

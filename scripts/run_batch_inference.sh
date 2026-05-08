@@ -1,0 +1,1 @@
+python batch_inference.py --config configs/batch_inference.yaml
