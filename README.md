@@ -59,7 +59,7 @@ https://huggingface.co/eye1patch/MERLIN
 The weight files will be uploaded in their original checkpoint format. No conversion to another format is required. After downloading the model files, update the relevant paths in `configs/inference.yaml`, especially:
 
 - `checkpoint`
-- `em_encoder.model_name_or_path`
+- `em_encoder.model_name_or_path` download from [EMind](https://huggingface.co/emind-fm/pretrain_weight)
 - `dataset_path`
 - `output_dir`
 
