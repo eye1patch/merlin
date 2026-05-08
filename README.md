@@ -8,7 +8,7 @@ MERLIN is a multimodal large language model framework for electromagnetic (EM) I
 - Project page: [em-merlin.github.io](https://em-merlin.github.io/)
 - Training dataset: [eye1patch/EM-134K](https://huggingface.co/datasets/eye1patch/EM-134K)
 - Evaluation benchmark: [eye1patch/EM-Bench](https://huggingface.co/datasets/eye1patch/EM-Bench)
-- Model weights: [eye1patch/MERLIN](https://huggingface.co/eye1patch/MERLIN) *(to be released)*
+- Model weights: [eye1patch/MERLIN](https://huggingface.co/eye1patch/MERLIN)
 
 ## Release Scope
 
